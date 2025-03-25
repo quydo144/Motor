@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #5a728f;
+    color: white;
+    padding: 1rem 2rem;
+    /* Tăng padding ngang để tạo không gian */
+    display: flex;
+    justify-content: space-between;
+    /* Giữ logo và nav ở hai đầu */
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: -100%;
+    /* Ẩn menu lên trên khi chưa mở (mobile) */
+    left: 0;
+    width: 100%;
+    background: #5a728f;
+    padding: 1rem 0;
+    transition: top 0.3s ease-in-out;
+    /* Hiệu ứng trượt */
+    z-index: 999;
+    text-align: center;
+}
+
+nav.active {
+    top: 60px;
+    /* Trượt xuống khi kích hoạt (mobile) */
+}
+
+nav a {
+    color: white;
+    margin: 0.5rem 1.5rem;
+    /* Tăng khoảng cách giữa các link */
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    /* Xếp dọc trên mobile */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        /* Hiển thị hamburger trên mobile */
+    }
+
+    nav {
+        top: -100%;
+        /* Ẩn mặc định trên mobile */
+    }
+
+    nav.active {
+        top: 60px;
+        /* Trượt xuống khi kích hoạt */
+    }
+}
+
+@media (min-width: 769px) {
+    header {
+        padding: 1rem 3rem;
+        /* Tăng padding ngang trên desktop */
+    }
+
+    nav {
+        position: static;
+        /* Menu trở lại bình thường trên desktop */
+        display: flex;
+        /* Hiển thị ngang */
+        padding: 0;
+        transition: none;
+        /* Không cần animation */
+        width: auto;
+        /* Chỉ chiếm chiều rộng cần thiết */
+    }
+
+    nav a {
+        display: inline-block;
+        /* Link hiển thị ngang */
+        margin: 0 1.5rem;
+        /* Tăng khoảng cách giữa các link trên desktop */
+    }
+
+    .hamburger {
+        display: none;
+        /* Ẩn hamburger trên desktop */
+    }
+}
+
+/* Hero Section với Slider */
+.hero {
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: slide 15s infinite;
+}
+
+.slide {
+    width: 20%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.slide-content {
+    background: transparent;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-20%);
+    }
+
+    45% {
+        transform: translateX(-20%);
+    }
+
+    50% {
+        transform: translateX(-40%);
+    }
+
+    70% {
+        transform: translateX(-40%);
+    }
+
+    75% {
+        transform: translateX(-60%);
+    }
+
+    95% {
+        transform: translateX(-60%);
+    }
+
+    100% {
+        transform: translateX(-80%);
+    }
+}
+
+/* Products Section */
+.products {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+    background: #e6f0fa;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-map {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+input,
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.8rem;
+    background: #5a728f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-info p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-info a {
+    color: rgb(38 118 235);
+    text-decoration: none;
+}
+
+/* Contact Menu */
+.contact-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    align-items: center;
+}
+
+.contact-menu a,
+.contact-menu button {
+    width: 40px;
+    height: 40px;
+    background: #5a728f;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-menu button {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.contact-menu a:hover,
+.contact-menu button:hover {
+    background: #0056b3;
+}
+
+/* Alert Container */
+#alert-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+    width: 250px;
+}
+
+.alert {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 1rem 2.5rem 1rem 1rem;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #alert-container {
+        width: 80%;
+        right: 10%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
