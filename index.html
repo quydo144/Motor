@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Điện Cơ Ngọc Trâm - Sửa chữa Motor</title>
+    <title>Điện Cơ Nguyên Phát</title>
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
     <!-- Meta Open Graph cho Facebook, Zalo -->
-    <meta property="og:title" content="Điện Cơ Ngọc Trâm - Chuyên Sửa Chữa Motor">
+    <meta property="og:title" content="Điện Cơ Nguyên Phát">
     <meta property="og:description"
-        content="Dịch vụ sửa chữa, bảo trì và quấn lại motor chuyên nghiệp tại Đồng Nai. Liên hệ ngay: 0907 042 043">
-    <meta property="og:image" content="https://picsum.photos/1200/630?random=1">
-    <meta property="og:url" content="https://diencongoctram.vn">
+        content="Dịch vụ sửa chữa, bảo trì cơ điện chuyên nghiệp tại Hồ Chí Minh. Liên hệ ngay: 0328455479">
+    <meta property="og:image" content="logo.svg">
+    <meta property="og:url" content="https://quydo144.github.io/Motor">
     <meta property="og:type" content="website">
-    <!-- Tích hợp Bootstrap CSS (giữ lại để định dạng alert) -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Tích hợp Fancybox 4.x CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
     <link rel="stylesheet" href="style.css">
@@ -23,7 +23,9 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo">Điện Cơ Ngọc Trâm</div>
+        <div class="logo">
+            <img src="logo.svg" alt="Điện Cơ Nguyên Phát">
+        </div>
         <div class="hamburger">☰</div>
         <nav>
             <a href="#home">Trang chủ</a>
@@ -32,7 +34,7 @@
         </nav>
     </header>
 
-    <!-- Hero Section với Slider -->
+    <!-- Hero Section Slider -->
     <section class="hero" id="home">
         <div class="slider">
             <div class="slide" style="background-image: url('https://picsum.photos/1920/1080?random=1');">
@@ -61,14 +63,14 @@
             </div>
             <div class="slide" style="background-image: url('https://picsum.photos/1920/1080?random=5');">
                 <div class="slide-content">
-                    <h1>Điện Cơ Ngọc Trâm</h1>
+                    <h1>Điện Cơ Nguyên Phát</h1>
                     <p>Đồng hành cùng doanh nghiệp</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section với Fancybox -->
+    <!-- Products Section Fancybox -->
     <section class="products" id="products">
         <h2>Sản phẩm của chúng tôi</h2>
         <div class="product-grid">
@@ -238,7 +240,6 @@
                     <textarea id="message" placeholder="Nội dung" rows="5" required></textarea>
                     <button type="submit">Gửi thông tin</button>
                 </form>
-                <p>Hoặc liên hệ qua Zalo: <a href="#">0907 042 043</a></p>
             </div>
             <div class="contact-map">
                 <iframe
@@ -251,25 +252,23 @@
     <!-- Footer -->
     <footer>
         <div class="footer-info">
-            <p><strong>Công ty TNHH MTV Điện Cơ Ngọc Trâm</strong></p>
-            <p>Địa chỉ: 25 Lý Thái Tổ, Ấp 1, Xã Hiệp Phước, Huyện Nhơn Trạch, Tỉnh Đồng Nai</p>
-            <p>Email: <a href="mailto:ctyngoctram1811@gmail.com">ctyngoctram1811@gmail.com</a></p>
-            <p>Hotline: <a href="tel:0907042043">0907 042 043</a></p>
+            <p><strong>Công ty TNHH Thương Mại và Dịch Vụ Cơ Điện Nguyên Phát</strong></p>
+            <p>Địa chỉ: Số 25/2A Đường Dương Công Khi, Ấp Thới Tây 1, Xã Tân Hiệp, Huyện Hóc Môn, Thành phố Hồ Chí Minh
+            </p>
+            <p>Email: <a href="mailto:codiennguyenphat79@gmail.com">codiennguyenphat79@gmail.com</a></p>
+            <p>Hotline: <a href="tel:0328455479">0328455479</a></p>
         </div>
     </footer>
 
     <!-- Contact Menu -->
     <div class="contact-menu">
-        <a href="mailto:ctyngoctram1811@gmail.com" title="Email">✉️</a>
-        <a href="https://zalo.me/0907042043" target="_blank" title="Zalo">💬</a>
+        <a href="mailto:codiennguyenphat79@gmail.com" title="Email">✉️</a>
+        <a href="https://zalo.me/0328455479" target="_blank" title="Zalo">💬</a>
         <button onclick="scrollToTop()" title="Lên đầu trang">↑</button>
     </div>
 
-    <!-- Tích hợp Fancybox 4.x JS -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <!-- JavaScript cơ bản -->
     <script>
-        // Hàm hiển thị alert Bootstrap (không có nút đóng)
         function showAlert(message, type) {
             const alertContainer = document.getElementById('alert-container');
             alertContainer.innerHTML = `
@@ -277,40 +276,31 @@
           ${message}
         </div>
       `;
-            // Tự động ẩn sau 2 giây
             setTimeout(() => {
                 alertContainer.innerHTML = '';
             }, 2000);
         }
 
-        // Khởi tạo Fancybox ngay sau khi DOM sẵn sàng
         document.addEventListener("DOMContentLoaded", function () {
-            // Áp dụng Fancybox cho các thẻ <a> có data-fancybox
             Fancybox.bind("[data-fancybox]", {
                 Toolbar: {
-                    display: ["zoom", "close"] // Chỉ hiển thị nút zoom và đóng
+                    display: ["zoom", "close"]
                 },
                 Image: {
                     zoom: true,
                     click: "zoom",
                     wheel: "zoom"
                 },
-                groupAll: false // Không nhóm các ảnh thành gallery
+                groupAll: false
             });
 
-            // Xử lý form submit để gửi dữ liệu vào Google Sheet
             document.getElementById('contact-form').addEventListener('submit', function (e) {
                 e.preventDefault();
-
-                // Lấy dữ liệu từ form
                 const name = document.getElementById('name').value;
                 const phone = document.getElementById('phone').value;
                 const message = document.getElementById('message').value;
 
-                // URL Web App từ Google Apps Script (thay bằng URL thực tế của bạn)
                 const scriptURL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
-
-                // Gửi dữ liệu qua fetch
                 fetch(scriptURL, {
                     method: 'POST',
                     body: JSON.stringify({ name, phone, message }),
@@ -320,7 +310,7 @@
                     .then(data => {
                         if (data.result === 'success') {
                             showAlert('Cảm ơn bạn đã gửi thông tin! Chúng tôi sẽ liên hệ sớm nhất.', 'info');
-                            document.getElementById('contact-form').reset(); // Reset form sau khi gửi
+                            document.getElementById('contact-form').reset();
                         } else {
                             showAlert('Có lỗi xảy ra, vui lòng thử lại!', 'danger');
                         }
@@ -356,7 +346,6 @@
                 nav.classList.toggle('active');
             });
 
-            // Đóng menu khi nhấp ra ngoài
             document.addEventListener('click', (e) => {
                 if (window.innerWidth <= 768 && nav.classList.contains('active')) {
                     if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
@@ -365,7 +354,6 @@
                 }
             });
 
-            // Đóng menu khi nhấp vào link trên mobile
             nav.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     if (window.innerWidth <= 768) {

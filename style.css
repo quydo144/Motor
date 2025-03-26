@@ -13,46 +13,51 @@ header {
     background: #5a728f;
     color: white;
     padding: 1rem 2rem;
-    /* Tăng padding ngang để tạo không gian */
     display: flex;
     justify-content: space-between;
-    /* Giữ logo và nav ở hai đầu */
     align-items: center;
     z-index: 1000;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .logo svg,
+    .logo img {
+        height: auto;
+    }
 }
 
 nav {
     position: fixed;
     top: -100%;
-    /* Ẩn menu lên trên khi chưa mở (mobile) */
     left: 0;
     width: 100%;
     background: #5a728f;
     padding: 1rem 0;
     transition: top 0.3s ease-in-out;
-    /* Hiệu ứng trượt */
     z-index: 999;
     text-align: center;
 }
 
 nav.active {
     top: 60px;
-    /* Trượt xuống khi kích hoạt (mobile) */
 }
 
 nav a {
     color: white;
     margin: 0.5rem 1.5rem;
-    /* Tăng khoảng cách giữa các link */
     text-decoration: none;
     font-size: 1rem;
     display: block;
-    /* Xếp dọc trên mobile */
 }
 
 .hamburger {
@@ -65,57 +70,54 @@ nav a {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
-        /* Hiển thị hamburger trên mobile */
     }
 
     nav {
         top: -100%;
-        /* Ẩn mặc định trên mobile */
     }
 
     nav.active {
         top: 60px;
-        /* Trượt xuống khi kích hoạt */
     }
 }
 
 @media (min-width: 769px) {
     header {
         padding: 1rem 3rem;
-        /* Tăng padding ngang trên desktop */
     }
 
     nav {
         position: static;
-        /* Menu trở lại bình thường trên desktop */
         display: flex;
-        /* Hiển thị ngang */
         padding: 0;
         transition: none;
-        /* Không cần animation */
         width: auto;
-        /* Chỉ chiếm chiều rộng cần thiết */
     }
 
     nav a {
         display: inline-block;
-        /* Link hiển thị ngang */
         margin: 0 1.5rem;
-        /* Tăng khoảng cách giữa các link trên desktop */
     }
 
     .hamburger {
         display: none;
-        /* Ẩn hamburger trên desktop */
     }
 }
 
 /* Hero Section với Slider */
 .hero {
-    height: 60vh;
+    height: 50vh;
+    max-height: 500px;
     position: relative;
     overflow: hidden;
     margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 40vh;
+        max-height: 300px;
+    }
 }
 
 .slider {
@@ -236,7 +238,7 @@ nav a {
 
 /* Contact Section */
 .contact-section {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background: #e6f0fa;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -302,7 +304,7 @@ button {
 footer {
     background: #343a40;
     color: white;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
 }
 
