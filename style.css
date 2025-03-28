@@ -38,7 +38,7 @@ header {
     font-size: 1rem;
     font-weight: bold;
     color: red;
-    text-align: center; /* Căn giữa chữ */
+    text-align: center;
 }
 
 .logo p.subject {
@@ -46,7 +46,7 @@ header {
     font-size: 1rem;
     color: #0030fc;
     font-weight: bold;
-    text-align: center; /* Căn giữa chữ */
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -143,14 +143,13 @@ nav a {
 
 .slider {
     display: flex;
-    width: 500%;
+    width: 400%;
     height: 100%;
-    /* margin-top: 1rem; */
-    animation: slide 15s infinite;
+    animation: slide 15s infinite ease-in-out;
 }
 
 .slide {
-    width: 20%;
+    width: 25%;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -168,7 +167,7 @@ nav a {
     border-radius: 5px;
 }
 
-.slide-content h1{
+.slide-content h1 {
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
@@ -183,36 +182,52 @@ nav a {
         transform: translateX(0);
     }
 
-    20% {
+    15% {
         transform: translateX(0);
     }
 
-    25% {
-        transform: translateX(-20%);
+    20% {
+        transform: translateX(-25%);
     }
 
-    45% {
-        transform: translateX(-20%);
+    35% {
+        transform: translateX(-25%);
     }
 
-    50% {
-        transform: translateX(-40%);
+    40% {
+        transform: translateX(-50%);
     }
 
-    70% {
-        transform: translateX(-40%);
+    55% {
+        transform: translateX(-50%);
+    }
+
+    60% {
+        transform: translateX(-75%);
     }
 
     75% {
-        transform: translateX(-60%);
+        transform: translateX(-75%);
+    }
+
+    80% {
+        transform: translateX(-50%);
+    }
+
+    85% {
+        transform: translateX(-50%);
+    }
+
+    90% {
+        transform: translateX(-25%);
     }
 
     95% {
-        transform: translateX(-60%);
+        transform: translateX(-25%);
     }
 
     100% {
-        transform: translateX(-80%);
+        transform: translateX(0);
     }
 }
 
@@ -435,6 +450,19 @@ footer {
     #alert-container {
         width: 80%;
         right: 10%;
+    }
+
+    .products h2 {
+        margin-bottom: 0;
+        font-size: 1.2rem
+    }
+
+    .slide-content {
+        padding: 2rem;
+    }
+
+    .slide-content h1 {
+        font-size: 1.2rem;
     }
 }
 
