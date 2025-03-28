@@ -163,9 +163,15 @@ nav a {
 }
 
 .slide-content {
-    background: transparent;
+    background: rgba(132, 128, 128, 0.772);
     padding: 2rem;
     border-radius: 5px;
+}
+
+.slide-content h1{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .hero h1 {
