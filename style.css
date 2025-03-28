@@ -233,6 +233,7 @@ nav a {
 .product-card {
     background: white;
     padding: 1rem;
+    padding-bottom: 0;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -248,7 +249,8 @@ nav a {
 
 .product-card p {
     font-size: 0.9rem;
-    color: #6c757d;
+    color: black;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
