@@ -220,6 +220,7 @@ nav a {
 .products h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 
 .product-grid {
@@ -250,8 +251,8 @@ nav a {
 .product-card p {
     font-size: 0.9rem;
     color: black;
-    font-size: 1rem;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 /* Contact Section */
