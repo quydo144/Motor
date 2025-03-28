@@ -373,9 +373,9 @@ footer {
 .contact-menu button {
     width: 40px;
     height: 40px;
-    background: #5a728f;
-    color: white;
+    background: rgb(241, 240, 240) !important;
     border-radius: 50%;
+    border: 1px solid black !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,6 +384,7 @@ footer {
     border: none;
     cursor: pointer;
     transition: background 0.3s;
+    background: #d3d0d926;
 }
 
 .contact-menu button {
@@ -393,7 +394,7 @@ footer {
 
 .contact-menu a:hover,
 .contact-menu button:hover {
-    background: #0056b3;
+    background: #b5bac5;
 }
 
 /* Alert Container */
