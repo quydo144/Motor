@@ -30,7 +30,7 @@ header {
 
 .logo p {
     margin: 0;
-    size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .logo p.title {
@@ -159,6 +159,10 @@ nav a {
     text-align: center;
     color: white;
     flex-shrink: 0;
+}
+
+.slider:hover {
+    animation-play-state: paused;
 }
 
 .slide-content {
@@ -463,7 +467,7 @@ footer {
     }
 
     .slide-content h1 {
-        font-size: 1.2rem;
+        font-size: clamp(1.2rem, 4vw, 2rem);
     }
 }
 
