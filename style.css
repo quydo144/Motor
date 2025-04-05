@@ -299,13 +299,13 @@ nav a {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 .contact-form {
-    flex: 1;
-    min-width: 300px;
+    flex: 1 1 40%;
+    min-width: 400px;
     text-align: center;
 }
 
@@ -318,8 +318,8 @@ nav a {
 }
 
 .contact-map {
-    flex: 1;
-    min-width: 300px;
+    flex: 1 1 40%;
+    min-width: 400px;
 }
 
 .contact-map iframe {
@@ -450,6 +450,18 @@ footer {
     .contact-container {
         flex-direction: column;
         align-items: center;
+        max-width: none;
+        width: auto;
+    }
+
+    .contact-form {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .contact-map {
+        flex: 1;
+        min-width: 300px;
     }
 
     #alert-container {
