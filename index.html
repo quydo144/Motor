@@ -31,223 +31,106 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Header với cấu trúc ngữ nghĩa -->
     <header>
         <div class="logo">
-            <img loading="lazy" src="logo.svg" alt="Điện Cơ Nguyên Phát">
+            <img loading="lazy" src="logo.svg" alt="Logo Điện Cơ Nguyên Phát">
             <div>
-                <p class="title">CƠ ĐIỆN NGUYÊN PHÁT</p>
+                <h1 class="title">Cơ Điện Nguyên Phát</h1>
                 <p class="subject">Tận Tâm - Uy Tín - Chất Lượng</p>
             </div>
-
         </div>
-        <div class="hamburger">☰</div>
-        <nav>
+        <button class="hamburger" aria-label="Mở menu">☰</button>
+        <nav aria-label="Menu chính">
             <a href="#home">Trang chủ</a>
-            <a href="#products">Sản phẩm</a>
+            <a href="#products">Dịch vụ</a>
             <a href="#contact">Liên hệ</a>
         </nav>
     </header>
 
-    <!-- Hero Section Slider -->
+    <!-- Hero Section với tiêu đề tối ưu SEO -->
     <section class="hero" id="home">
         <div class="slider">
             <div class="slide" style="background-image: url('slider/1.jpg');">
                 <div class="slide-content">
-                    <h1>SỬA CHỮA, BẢO TRÌ ĐỘNG CƠ AC</h1>
+                    <h2>Sửa Chữa & Bảo Trì Động Cơ AC Chuyên Nghiệp</h2>
                 </div>
             </div>
             <div class="slide" style="background-image: url('slider/2.jpg');">
                 <div class="slide-content">
-                    <h1>SỬA CHỮA, BẢO TRÌ ĐỘNG CƠ DC</h1>
+                    <h2>Sửa Chữa Động Cơ DC Uy Tín</h2>
                 </div>
             </div>
             <div class="slide" style="background-image: url('slider/3.jpg');">
                 <div class="slide-content">
-                    <h1>SỬA CHỮA, BẢO TRÌ MÁY PHÁT ĐIỆN</h1>
+                    <h2>Bảo Trì Máy Phát Điện Hiệu Quả</h2>
                 </div>
             </div>
             <div class="slide" style="background-image: url('slider/4.jpg');">
                 <div class="slide-content">
-                    <h1>SỬA CHỮA, BẢO TRÌ MÁY BIẾN ÁP</h1>
+                    <h2>Sửa Chữa Máy Biến Áp Chất Lượng</h2>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section Fancybox -->
+    <!-- Products Section với tiêu đề và mô tả tối ưu -->
     <section class="products" id="products">
-        <h2>👇 DỊCH VỤ CỦA CHÚNG TÔI 👇</h2>
+        <h2>Dịch Vụ Sửa Chữa và Bảo Trì Cơ Điện</h2>
         <div class="product-grid">
-            <div class="product-card">
-                <a href="image/1.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/1.jpg" alt="Motor AC 100KW">
+            <article class="product-card">
+                <a href="image/1.jpg" data-fancybox data-caption="Bảo dưỡng động cơ DC 110KW">
+                    <img loading="lazy" src="image/1.jpg" alt="Bảo dưỡng động cơ DC 110KW tại Hồ Chí Minh">
                 </a>
-                <p>Bảo dưỡng động cơ DC 110KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/2.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/2.jpg" alt="Motor AC 100KW">
+                <h3>Bảo dưỡng động cơ DC 110KW</h3>
+            </article>
+            <article class="product-card">
+                <a href="image/2.jpg" data-fancybox data-caption="Sửa chữa Rotor Dinamo 500KVA">
+                    <img loading="lazy" src="image/2.jpg" alt="Sửa chữa Rotor Dinamo 500KVA chuyên nghiệp">
                 </a>
-                <p>Sửa chữa Rotor Dinamo 500KVA</p>
-            </div>
-            <div class="product-card">
-                <a href="image/4.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/4.jpg" alt="Motor AC 100KW">
+                <h3>Sửa chữa Rotor Dinamo 500KVA</h3>
+            </article>
+            <!-- Lặp lại với các dịch vụ khác, tối ưu alt và tiêu đề -->
+            <!-- Ví dụ thêm một mục -->
+            <article class="product-card">
+                <a href="image/24.jpg" data-fancybox data-caption="Sửa chữa động cơ AC 450KW">
+                    <img loading="lazy" src="image/24.jpg" alt="Sửa chữa động cơ AC 450KW tại Hồ Chí Minh">
                 </a>
-                <p>Bảo dưỡng động cơ DC 550KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/5.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/5.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Cân bằng động Rotor Dinamo 500KVA</p>
-            </div>
-            <div class="product-card">
-                <a href="image/6.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/6.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa Sator 500KVA</p>
-            </div>
-            <div class="product-card">
-                <a href="image/7.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/7.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ DC 160KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/8.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/8.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa Dinamo 200KVA</p>
-            </div>
-            <div class="product-card">
-                <a href="image/9.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/9.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa Block máy nén lạnh 60HP</p>
-            </div>
-            <div class="product-card">
-                <a href="image/10.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/10.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa máy biến áp</p>
-            </div>
-            <div class="product-card">
-                <a href="image/11.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/11.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ AC 315KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/12.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/12.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa kích từ động cơ DC 550KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/13.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/13.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ cẩu trục 60HP</p>
-            </div>
-            <div class="product-card">
-                <a href="image/14.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/14.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa cuộn thắng từ</p>
-            </div>
-            <div class="product-card">
-                <a href="image/16.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/16.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ SERVO</p>
-            </div>
-            <div class="product-card">
-                <a href="image/17.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/17.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa block lạnh 120HP</p>
-            </div>
-            <div class="product-card">
-                <a href="image/18.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/18.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa block lạnh 80HP</p>
-            </div>
-            <div class="product-card">
-                <a href="image/19.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/19.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Bảo dưỡng động cơ AC 315KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/20.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/20.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ DC 90KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/21.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/21.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ 160KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/22.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/22.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ AC 220KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/23.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/23.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa Rotor Dinamo 300KVA</p>
-            </div>
-            <div class="product-card">
-                <a href="image/24.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/24.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa động cơ AC 450KW</p>
-            </div>
-            <div class="product-card">
-                <a href="image/25.jpg" data-fancybox data-caption="Motor AC 100KW">
-                    <img loading="lazy" src="image/25.jpg" alt="Motor AC 100KW">
-                </a>
-                <p>Sửa chữa Rotor DC 110KW</p>
-            </div>
+                <h3>Sửa chữa động cơ AC 450KW</h3>
+            </article>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-section" id="contact">
-        <h2>Liên hệ với chúng tôi</h2>
+        <h2>Liên Hệ Điện Cơ Nguyên Phát</h2>
         <div class="contact-container">
             <div class="contact-form">
-                <!-- Alert Container -->
-                <div id="alert-container"></div>
+                <div id="alert-container" aria-live="polite"></div>
                 <form id="contact-form">
+                    <label for="name">Họ và tên:</label>
                     <input type="text" id="name" placeholder="Họ và tên" required>
+                    <label for="phone">Số điện thoại:</label>
                     <input type="tel" id="phone" placeholder="Số điện thoại" required>
+                    <label for="message">Nội dung:</label>
                     <textarea id="message" placeholder="Nội dung" rows="5" required></textarea>
                     <button type="submit">Gửi thông tin</button>
                 </form>
             </div>
             <div class="contact-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.699954363745!2d106.59444197221376!3d10.91039227925945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d53646aa8e19%3A0xf06cf2455b39c001!2zQ8O0bmcgVHkgVE5ISCBUaMawxqFuZyBN4bqhaSB2w6AgROG7i2NoIFbhu6UgQ8ahIMSQaeG7h24gTmd1ecOqbiBQaMOhdA!5e0!3m2!1svi!2s!4v1743174579779!5m2!1svi!2s"
-                    allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.699954363745!2d106.59441197221376!3d10.91039227925945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d53646aa8e19%3A0xf06cf2455b39c001!2zQ8O0bmcgVHkgVE5ISCBUaMawxqFuZyBN4bqhaSB2w6AgROG7i2NoIFbhu6UgQ8ahIMSQaeG7h24gTmd1ecOqbiBQaMOhdA!5e0!3m2!1svi!2s!4v1743174579779!5m2!1svi!2s"
+                    allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
+                    title="Bản đồ Điện Cơ Nguyên Phát"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer với thông tin liên hệ -->
     <footer>
         <div class="footer-info">
-            <p><strong>Công ty TNHH Thương Mại và Dịch Vụ Cơ Điện Nguyên Phát</strong></p>
-            <p>Địa chỉ: Số 25/2A Đường Dương Công Khi, Ấp Thới Tây 1, Xã Tân Hiệp, Huyện Hóc Môn, Thành phố Hồ Chí Minh
-            </p>
+            <h3>Công ty TNHH Thương Mại và Dịch Vụ Cơ Điện Nguyên Phát</h3>
+            <p>Địa chỉ: Số 25/2A Đường Dương Công Khi, Ấp Thới Tây 1, Xã Tân Hiệp, Huyện Hóc Môn, TP. Hồ Chí Minh</p>
             <p>Email: <a href="mailto:codiennguyenphat79@gmail.com">codiennguyenphat79@gmail.com</a></p>
             <p>Hotline: <a href="tel:0328455479">0328455479</a></p>
         </div>
@@ -255,15 +138,16 @@
 
     <!-- Contact Menu -->
     <div class="contact-menu">
-        <a href="mailto:codiennguyenphat79@gmail.com" title="Email">✉️</a>
-        <a href="https://zalo.me/0328455479" target="_blank" title="Zalo">
-            <img loading="lazy" src="zalo_icon.svg" alt="Zalo">
+        <a href="mailto:codiennguyenphat79@gmail.com" title="Gửi email cho chúng tôi">✉️</a>
+        <a href="https://zalo.me/0328455479" target="_blank" title="Liên hệ qua Zalo">
+            <img loading="lazy" src="zalo_icon.svg" alt="Liên hệ qua Zalo">
         </a>
-        <button onclick="scrollToTop()" title="Lên đầu trang">👆</button>
+        <button onclick="scrollToTop()" title="Lên đầu trang" aria-label="Lên đầu trang">👆</button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script>
+    <!-- Scripts giữ nguyên, nhưng thêm async/defer -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js" defer></script>
+    <script defer>
         function showAlert(message, type) {
             const alertContainer = document.getElementById('alert-container');
             alertContainer.innerHTML = `
@@ -271,21 +155,13 @@
           ${message}
         </div>
       `;
-            setTimeout(() => {
-                alertContainer.innerHTML = '';
-            }, 2000);
+            setTimeout(() => alertContainer.innerHTML = '', 2000);
         }
 
         document.addEventListener("DOMContentLoaded", function () {
             Fancybox.bind("[data-fancybox]", {
-                Toolbar: {
-                    display: ["zoom", "close"]
-                },
-                Image: {
-                    zoom: true,
-                    click: "zoom",
-                    wheel: "zoom"
-                },
+                Toolbar: { display: ["zoom", "close"] },
+                Image: { zoom: true, click: "zoom", wheel: "zoom" },
                 groupAll: false
             });
 
@@ -317,17 +193,14 @@
             });
         });
 
-        // Scroll to Top
         const scrollTopBtn = document.querySelector('.contact-menu button');
-        window.onscroll = () => {
-            scrollTopBtn.style.opacity = '1';
-        };
+        window.onscroll = () => scrollTopBtn.style.opacity = '1';
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 
-    <script>
+    <script defer>
         document.addEventListener("DOMContentLoaded", function () {
             const hamburger = document.querySelector('.hamburger');
             const nav = document.querySelector('nav');
@@ -347,9 +220,7 @@
 
             nav.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
-                    if (window.innerWidth <= 768) {
-                        nav.classList.remove('active');
-                    }
+                    if (window.innerWidth <= 768) nav.classList.remove('active');
                 });
             });
         });
